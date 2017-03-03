@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A5053D21E698F0B00EC0F4B /* menu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A5053D01E698F0B00EC0F4B /* menu.mp3 */; };
+		6A5053D31E698F0B00EC0F4B /* game.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A5053D11E698F0B00EC0F4B /* game.mp3 */; };
+		6A5053DB1E6991A700EC0F4B /* hit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6A5053D41E6991A700EC0F4B /* hit.wav */; };
+		6A5053DC1E6991A700EC0F4B /* menu_hit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6A5053D51E6991A700EC0F4B /* menu_hit.wav */; };
+		6A5053DD1E6991A700EC0F4B /* NFF-confirmation.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6A5053D61E6991A700EC0F4B /* NFF-confirmation.wav */; };
+		6A5053DE1E6991A700EC0F4B /* NFF-dry-punch.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6A5053D71E6991A700EC0F4B /* NFF-dry-punch.wav */; };
+		6A5053DF1E6991A700EC0F4B /* NFF-grate.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6A5053D81E6991A700EC0F4B /* NFF-grate.wav */; };
+		6A5053E01E6991A700EC0F4B /* NFF-heart-beat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6A5053D91E6991A700EC0F4B /* NFF-heart-beat.wav */; };
+		6A5053E11E6991A700EC0F4B /* NFF-throw-05.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6A5053DA1E6991A700EC0F4B /* NFF-throw-05.wav */; };
+		6A5053E31E69986700EC0F4B /* WinningScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6A5053E21E69986700EC0F4B /* WinningScene.sks */; };
+		6A5053E51E69988400EC0F4B /* WinningScence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5053E41E69988300EC0F4B /* WinningScence.swift */; };
+		6AA4CD001E68A0560087DD10 /* steelsword.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA4CCFF1E68A0560087DD10 /* steelsword.mp3 */; };
+		6AA4CD021E68A05F0087DD10 /* Zombie_Attack_Walk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AA4CD011E68A05F0087DD10 /* Zombie_Attack_Walk.mp3 */; };
+		6AA4CD041E68AA0C0087DD10 /* Level_04.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6AA4CD031E68AA0C0087DD10 /* Level_04.sks */; };
+		6AA4CD061E68D1700087DD10 /* GameOverScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6AA4CD051E68D1700087DD10 /* GameOverScene.sks */; };
+		6AA4CD081E68D21A0087DD10 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4CD071E68D21A0087DD10 /* GameOverScene.swift */; };
+		6AA4CD0B1E6972350087DD10 /* Level_00.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6AA4CD0A1E6972350087DD10 /* Level_00.sks */; };
+		6AA4CD0D1E6973830087DD10 /* Level_02.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6AA4CD0C1E6973830087DD10 /* Level_02.sks */; };
+		6AA4CD0F1E6978F30087DD10 /* Level_03.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6AA4CD0E1E6978F30087DD10 /* Level_03.sks */; };
+		6AA4CD111E697AE30087DD10 /* Level_05.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6AA4CD101E697AE30087DD10 /* Level_05.sks */; };
+		6AFD21021E5981E80087D7F2 /* PlayerSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFD21011E5981E80087D7F2 /* PlayerSprite.swift */; };
+		6AFD21041E59840D0087D7F2 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFD21031E59840D0087D7F2 /* Utils.swift */; };
+		6AFD21211E59BFA00087D7F2 /* Running.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFD21201E59BFA00087D7F2 /* Running.swift */; };
+		6AFD21231E59C0650087D7F2 /* IdleState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFD21221E59C0650087D7F2 /* IdleState.swift */; };
+		6AFD21251E59CFC80087D7F2 /* JumpingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFD21241E59CFC80087D7F2 /* JumpingState.swift */; };
+		6AFD21271E59D0610087D7F2 /* FallingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFD21261E59D0610087D7F2 /* FallingState.swift */; };
+		6AFD21291E5A0F2A0087D7F2 /* ThrowingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFD21281E5A0F2A0087D7F2 /* ThrowingState.swift */; };
+		6AFD212B1E5A17710087D7F2 /* KunaiSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFD212A1E5A17710087D7F2 /* KunaiSprite.swift */; };
+		6AFD212F1E5BAF240087D7F2 /* zombie.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 6AFD212D1E5BAF240087D7F2 /* zombie.atlasc */; };
+		6AFD21301E5BAF240087D7F2 /* Zombie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFD212E1E5BAF240087D7F2 /* Zombie.swift */; };
+		6AFD21321E5BAF520087D7F2 /* ZombieSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFD21311E5BAF520087D7F2 /* ZombieSprite.swift */; };
+		6AFD21351E5C92FB0087D7F2 /* IdleZombieState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFD21341E5C92FB0087D7F2 /* IdleZombieState.swift */; };
+		6AFD21371E5C94400087D7F2 /* DyingZombieState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFD21361E5C94400087D7F2 /* DyingZombieState.swift */; };
+		6AFD21391E5CA5D70087D7F2 /* WalkingZombieState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFD21381E5CA5D70087D7F2 /* WalkingZombieState.swift */; };
+		6AFD213B1E5CAE700087D7F2 /* AttackingZombieState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFD213A1E5CAE700087D7F2 /* AttackingZombieState.swift */; };
+		6AFD213D1E5CB6020087D7F2 /* DyingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFD213C1E5CB6020087D7F2 /* DyingState.swift */; };
+		9307979B1E533CAF0036C97C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9307979A1E533CAF0036C97C /* AppDelegate.swift */; };
+		9307979F1E533CAF0036C97C /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9307979E1E533CAF0036C97C /* Actions.sks */; };
+		930797A11E533CAF0036C97C /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930797A01E533CAF0036C97C /* GameScene.swift */; };
+		930797A31E533CAF0036C97C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930797A21E533CAF0036C97C /* ViewController.swift */; };
+		930797A51E533CB00036C97C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 930797A41E533CB00036C97C /* Assets.xcassets */; };
+		930797A81E533CB00036C97C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930797A61E533CB00036C97C /* Main.storyboard */; };
+		930797B11E533CF60036C97C /* ninja.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 930797AF1E533CF60036C97C /* ninja.atlasc */; };
+		930797B21E533CF60036C97C /* Ninja.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930797B01E533CF60036C97C /* Ninja.swift */; };
+		933408331E608545009F7E49 /* RunningParticule.sks in Resources */ = {isa = PBXBuildFile; fileRef = 933408321E608545009F7E49 /* RunningParticule.sks */; };
+		93366E051E6467AA004BDC92 /* SwordSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93366E041E6467AA004BDC92 /* SwordSprite.swift */; };
+		93366E0B1E647BED004BDC92 /* Level_01.sks in Resources */ = {isa = PBXBuildFile; fileRef = 93366E0A1E647BED004BDC92 /* Level_01.sks */; };
+		93366E0D1E647ED5004BDC92 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93366E0C1E647ED5004BDC92 /* MenuScene.swift */; };
+		93366E0F1E647FF2004BDC92 /* MenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 93366E0E1E647FF2004BDC92 /* MenuScene.sks */; };
+		937A5CF41E607741005D4C6A /* ConcentrationParticule.sks in Resources */ = {isa = PBXBuildFile; fileRef = 937A5CF31E607741005D4C6A /* ConcentrationParticule.sks */; };
+		ADBB1B1F1E5F422A006F4F86 /* AttackingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB1B1E1E5F422A006F4F86 /* AttackingState.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6A5053D01E698F0B00EC0F4B /* menu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = menu.mp3; sourceTree = "<group>"; };
+		6A5053D11E698F0B00EC0F4B /* game.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = game.mp3; sourceTree = "<group>"; };
+		6A5053D41E6991A700EC0F4B /* hit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hit.wav; sourceTree = "<group>"; };
+		6A5053D51E6991A700EC0F4B /* menu_hit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = menu_hit.wav; sourceTree = "<group>"; };
+		6A5053D61E6991A700EC0F4B /* NFF-confirmation.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "NFF-confirmation.wav"; sourceTree = "<group>"; };
+		6A5053D71E6991A700EC0F4B /* NFF-dry-punch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "NFF-dry-punch.wav"; sourceTree = "<group>"; };
+		6A5053D81E6991A700EC0F4B /* NFF-grate.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "NFF-grate.wav"; sourceTree = "<group>"; };
+		6A5053D91E6991A700EC0F4B /* NFF-heart-beat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "NFF-heart-beat.wav"; sourceTree = "<group>"; };
+		6A5053DA1E6991A700EC0F4B /* NFF-throw-05.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "NFF-throw-05.wav"; sourceTree = "<group>"; };
+		6A5053E21E69986700EC0F4B /* WinningScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = WinningScene.sks; sourceTree = "<group>"; };
+		6A5053E41E69988300EC0F4B /* WinningScence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinningScence.swift; sourceTree = "<group>"; };
+		6AA4CCFF1E68A0560087DD10 /* steelsword.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = steelsword.mp3; sourceTree = "<group>"; };
+		6AA4CD011E68A05F0087DD10 /* Zombie_Attack_Walk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Zombie_Attack_Walk.mp3; sourceTree = "<group>"; };
+		6AA4CD031E68AA0C0087DD10 /* Level_04.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_04.sks; sourceTree = "<group>"; };
+		6AA4CD051E68D1700087DD10 /* GameOverScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOverScene.sks; sourceTree = "<group>"; };
+		6AA4CD071E68D21A0087DD10 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		6AA4CD0A1E6972350087DD10 /* Level_00.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_00.sks; sourceTree = "<group>"; };
+		6AA4CD0C1E6973830087DD10 /* Level_02.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_02.sks; sourceTree = "<group>"; };
+		6AA4CD0E1E6978F30087DD10 /* Level_03.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_03.sks; sourceTree = "<group>"; };
+		6AA4CD101E697AE30087DD10 /* Level_05.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_05.sks; sourceTree = "<group>"; };
+		6AFD21011E5981E80087D7F2 /* PlayerSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerSprite.swift; sourceTree = "<group>"; };
+		6AFD21031E59840D0087D7F2 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		6AFD21201E59BFA00087D7F2 /* Running.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Running.swift; sourceTree = "<group>"; };
+		6AFD21221E59C0650087D7F2 /* IdleState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdleState.swift; sourceTree = "<group>"; };
+		6AFD21241E59CFC80087D7F2 /* JumpingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JumpingState.swift; sourceTree = "<group>"; };
+		6AFD21261E59D0610087D7F2 /* FallingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FallingState.swift; sourceTree = "<group>"; };
+		6AFD21281E5A0F2A0087D7F2 /* ThrowingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThrowingState.swift; sourceTree = "<group>"; };
+		6AFD212A1E5A17710087D7F2 /* KunaiSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KunaiSprite.swift; sourceTree = "<group>"; };
+		6AFD212D1E5BAF240087D7F2 /* zombie.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = zombie.atlasc; sourceTree = "<group>"; };
+		6AFD212E1E5BAF240087D7F2 /* Zombie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zombie.swift; sourceTree = "<group>"; };
+		6AFD21311E5BAF520087D7F2 /* ZombieSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZombieSprite.swift; sourceTree = "<group>"; };
+		6AFD21341E5C92FB0087D7F2 /* IdleZombieState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdleZombieState.swift; sourceTree = "<group>"; };
+		6AFD21361E5C94400087D7F2 /* DyingZombieState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DyingZombieState.swift; sourceTree = "<group>"; };
+		6AFD21381E5CA5D70087D7F2 /* WalkingZombieState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkingZombieState.swift; sourceTree = "<group>"; };
+		6AFD213A1E5CAE700087D7F2 /* AttackingZombieState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttackingZombieState.swift; sourceTree = "<group>"; };
+		6AFD213C1E5CB6020087D7F2 /* DyingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DyingState.swift; sourceTree = "<group>"; };
+		930797971E533CAF0036C97C /* MyNinja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyNinja.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9307979A1E533CAF0036C97C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9307979E1E533CAF0036C97C /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		930797A01E533CAF0036C97C /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		930797A21E533CAF0036C97C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		930797A41E533CB00036C97C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		930797A71E533CB00036C97C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		930797A91E533CB00036C97C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		930797AF1E533CF60036C97C /* ninja.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ninja.atlasc; sourceTree = "<group>"; };
+		930797B01E533CF60036C97C /* Ninja.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ninja.swift; sourceTree = "<group>"; };
+		933408321E608545009F7E49 /* RunningParticule.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = RunningParticule.sks; sourceTree = "<group>"; };
+		93366E041E6467AA004BDC92 /* SwordSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwordSprite.swift; sourceTree = "<group>"; };
+		93366E0A1E647BED004BDC92 /* Level_01.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_01.sks; sourceTree = "<group>"; };
+		93366E0C1E647ED5004BDC92 /* MenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
+		93366E0E1E647FF2004BDC92 /* MenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MenuScene.sks; sourceTree = "<group>"; };
+		937A5CF31E607741005D4C6A /* ConcentrationParticule.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ConcentrationParticule.sks; sourceTree = "<group>"; };
+		ADBB1B1E1E5F422A006F4F86 /* AttackingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttackingState.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		930797941E533CAF0036C97C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6AA4CD091E68D9730087DD10 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				93366E0C1E647ED5004BDC92 /* MenuScene.swift */,
+				93366E0E1E647FF2004BDC92 /* MenuScene.sks */,
+				6AA4CD051E68D1700087DD10 /* GameOverScene.sks */,
+				6A5053E21E69986700EC0F4B /* WinningScene.sks */,
+				6AA4CD071E68D21A0087DD10 /* GameOverScene.swift */,
+				6A5053E41E69988300EC0F4B /* WinningScence.swift */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		6AFD211E1E59BCF20087D7F2 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				6AFD211F1E59BF8C0087D7F2 /* states */,
+				930797AF1E533CF60036C97C /* ninja.atlasc */,
+				930797B01E533CF60036C97C /* Ninja.swift */,
+				6AFD21011E5981E80087D7F2 /* PlayerSprite.swift */,
+				937A5CF31E607741005D4C6A /* ConcentrationParticule.sks */,
+				933408321E608545009F7E49 /* RunningParticule.sks */,
+			);
+			name = Player;
+			sourceTree = "<group>";
+		};
+		6AFD211F1E59BF8C0087D7F2 /* states */ = {
+			isa = PBXGroup;
+			children = (
+				6AFD21201E59BFA00087D7F2 /* Running.swift */,
+				6AFD21221E59C0650087D7F2 /* IdleState.swift */,
+				6AFD21241E59CFC80087D7F2 /* JumpingState.swift */,
+				6AFD21261E59D0610087D7F2 /* FallingState.swift */,
+				6AFD21281E5A0F2A0087D7F2 /* ThrowingState.swift */,
+				6AFD213C1E5CB6020087D7F2 /* DyingState.swift */,
+				ADBB1B1E1E5F422A006F4F86 /* AttackingState.swift */,
+			);
+			name = states;
+			sourceTree = "<group>";
+		};
+		6AFD212C1E5BAF060087D7F2 /* Zombie */ = {
+			isa = PBXGroup;
+			children = (
+				6AFD21331E5C92830087D7F2 /* states */,
+				6AFD212D1E5BAF240087D7F2 /* zombie.atlasc */,
+				6AFD212E1E5BAF240087D7F2 /* Zombie.swift */,
+				6AFD21311E5BAF520087D7F2 /* ZombieSprite.swift */,
+			);
+			name = Zombie;
+			sourceTree = "<group>";
+		};
+		6AFD21331E5C92830087D7F2 /* states */ = {
+			isa = PBXGroup;
+			children = (
+				6AFD21341E5C92FB0087D7F2 /* IdleZombieState.swift */,
+				6AFD21361E5C94400087D7F2 /* DyingZombieState.swift */,
+				6AFD21381E5CA5D70087D7F2 /* WalkingZombieState.swift */,
+				6AFD213A1E5CAE700087D7F2 /* AttackingZombieState.swift */,
+			);
+			name = states;
+			sourceTree = "<group>";
+		};
+		9307978E1E533CAF0036C97C = {
+			isa = PBXGroup;
+			children = (
+				930797991E533CAF0036C97C /* MyNinja */,
+				930797981E533CAF0036C97C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		930797981E533CAF0036C97C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				930797971E533CAF0036C97C /* MyNinja.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		930797991E533CAF0036C97C /* MyNinja */ = {
+			isa = PBXGroup;
+			children = (
+				93366E091E647BBF004BDC92 /* Levels */,
+				93366E061E6467B9004BDC92 /* Weapon */,
+				6AFD212C1E5BAF060087D7F2 /* Zombie */,
+				6AFD211E1E59BCF20087D7F2 /* Player */,
+				6AA4CD091E68D9730087DD10 /* Scenes */,
+				9307979A1E533CAF0036C97C /* AppDelegate.swift */,
+				9307979E1E533CAF0036C97C /* Actions.sks */,
+				930797A01E533CAF0036C97C /* GameScene.swift */,
+				930797A21E533CAF0036C97C /* ViewController.swift */,
+				930797A41E533CB00036C97C /* Assets.xcassets */,
+				930797A61E533CB00036C97C /* Main.storyboard */,
+				930797A91E533CB00036C97C /* Info.plist */,
+				6AA4CD011E68A05F0087DD10 /* Zombie_Attack_Walk.mp3 */,
+				6AA4CCFF1E68A0560087DD10 /* steelsword.mp3 */,
+				6A5053D01E698F0B00EC0F4B /* menu.mp3 */,
+				6A5053D11E698F0B00EC0F4B /* game.mp3 */,
+				6AFD21031E59840D0087D7F2 /* Utils.swift */,
+				6A5053D41E6991A700EC0F4B /* hit.wav */,
+				6A5053D51E6991A700EC0F4B /* menu_hit.wav */,
+				6A5053D61E6991A700EC0F4B /* NFF-confirmation.wav */,
+				6A5053D71E6991A700EC0F4B /* NFF-dry-punch.wav */,
+				6A5053D81E6991A700EC0F4B /* NFF-grate.wav */,
+				6A5053D91E6991A700EC0F4B /* NFF-heart-beat.wav */,
+				6A5053DA1E6991A700EC0F4B /* NFF-throw-05.wav */,
+			);
+			path = MyNinja;
+			sourceTree = "<group>";
+		};
+		93366E061E6467B9004BDC92 /* Weapon */ = {
+			isa = PBXGroup;
+			children = (
+				6AFD212A1E5A17710087D7F2 /* KunaiSprite.swift */,
+				93366E041E6467AA004BDC92 /* SwordSprite.swift */,
+			);
+			name = Weapon;
+			sourceTree = "<group>";
+		};
+		93366E091E647BBF004BDC92 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				6AA4CD0A1E6972350087DD10 /* Level_00.sks */,
+				93366E0A1E647BED004BDC92 /* Level_01.sks */,
+				6AA4CD0C1E6973830087DD10 /* Level_02.sks */,
+				6AA4CD0E1E6978F30087DD10 /* Level_03.sks */,
+				6AA4CD031E68AA0C0087DD10 /* Level_04.sks */,
+				6AA4CD101E697AE30087DD10 /* Level_05.sks */,
+			);
+			name = Levels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		930797961E533CAF0036C97C /* MyNinja */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 930797AC1E533CB00036C97C /* Build configuration list for PBXNativeTarget "MyNinja" */;
+			buildPhases = (
+				930797931E533CAF0036C97C /* Sources */,
+				930797941E533CAF0036C97C /* Frameworks */,
+				930797951E533CAF0036C97C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyNinja;
+			productName = MyNinja;
+			productReference = 930797971E533CAF0036C97C /* MyNinja.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9307978F1E533CAF0036C97C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Home;
+				TargetAttributes = {
+					930797961E533CAF0036C97C = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 930797921E533CAF0036C97C /* Build configuration list for PBXProject "MyNinja" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9307978E1E533CAF0036C97C;
+			productRefGroup = 930797981E533CAF0036C97C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				930797961E533CAF0036C97C /* MyNinja */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		930797951E533CAF0036C97C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A5053DD1E6991A700EC0F4B /* NFF-confirmation.wav in Resources */,
+				6AA4CD061E68D1700087DD10 /* GameOverScene.sks in Resources */,
+				933408331E608545009F7E49 /* RunningParticule.sks in Resources */,
+				6A5053E31E69986700EC0F4B /* WinningScene.sks in Resources */,
+				6A5053DF1E6991A700EC0F4B /* NFF-grate.wav in Resources */,
+				93366E0B1E647BED004BDC92 /* Level_01.sks in Resources */,
+				930797B11E533CF60036C97C /* ninja.atlasc in Resources */,
+				6A5053D31E698F0B00EC0F4B /* game.mp3 in Resources */,
+				6AA4CD0B1E6972350087DD10 /* Level_00.sks in Resources */,
+				6AA4CD0F1E6978F30087DD10 /* Level_03.sks in Resources */,
+				6A5053E11E6991A700EC0F4B /* NFF-throw-05.wav in Resources */,
+				93366E0F1E647FF2004BDC92 /* MenuScene.sks in Resources */,
+				930797A51E533CB00036C97C /* Assets.xcassets in Resources */,
+				6AFD212F1E5BAF240087D7F2 /* zombie.atlasc in Resources */,
+				6A5053D21E698F0B00EC0F4B /* menu.mp3 in Resources */,
+				6AA4CD021E68A05F0087DD10 /* Zombie_Attack_Walk.mp3 in Resources */,
+				6A5053E01E6991A700EC0F4B /* NFF-heart-beat.wav in Resources */,
+				6A5053DB1E6991A700EC0F4B /* hit.wav in Resources */,
+				6A5053DE1E6991A700EC0F4B /* NFF-dry-punch.wav in Resources */,
+				6AA4CD041E68AA0C0087DD10 /* Level_04.sks in Resources */,
+				6AA4CD0D1E6973830087DD10 /* Level_02.sks in Resources */,
+				9307979F1E533CAF0036C97C /* Actions.sks in Resources */,
+				6AA4CD111E697AE30087DD10 /* Level_05.sks in Resources */,
+				6A5053DC1E6991A700EC0F4B /* menu_hit.wav in Resources */,
+				930797A81E533CB00036C97C /* Main.storyboard in Resources */,
+				937A5CF41E607741005D4C6A /* ConcentrationParticule.sks in Resources */,
+				6AA4CD001E68A0560087DD10 /* steelsword.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		930797931E533CAF0036C97C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AFD21301E5BAF240087D7F2 /* Zombie.swift in Sources */,
+				6A5053E51E69988400EC0F4B /* WinningScence.swift in Sources */,
+				930797A31E533CAF0036C97C /* ViewController.swift in Sources */,
+				ADBB1B1F1E5F422A006F4F86 /* AttackingState.swift in Sources */,
+				6AFD21211E59BFA00087D7F2 /* Running.swift in Sources */,
+				6AFD21371E5C94400087D7F2 /* DyingZombieState.swift in Sources */,
+				930797A11E533CAF0036C97C /* GameScene.swift in Sources */,
+				930797B21E533CF60036C97C /* Ninja.swift in Sources */,
+				6AFD21251E59CFC80087D7F2 /* JumpingState.swift in Sources */,
+				6AFD21041E59840D0087D7F2 /* Utils.swift in Sources */,
+				6AFD213B1E5CAE700087D7F2 /* AttackingZombieState.swift in Sources */,
+				6AFD212B1E5A17710087D7F2 /* KunaiSprite.swift in Sources */,
+				6AFD21021E5981E80087D7F2 /* PlayerSprite.swift in Sources */,
+				6AFD213D1E5CB6020087D7F2 /* DyingState.swift in Sources */,
+				93366E0D1E647ED5004BDC92 /* MenuScene.swift in Sources */,
+				6AFD21231E59C0650087D7F2 /* IdleState.swift in Sources */,
+				6AFD21391E5CA5D70087D7F2 /* WalkingZombieState.swift in Sources */,
+				93366E051E6467AA004BDC92 /* SwordSprite.swift in Sources */,
+				6AFD21271E59D0610087D7F2 /* FallingState.swift in Sources */,
+				9307979B1E533CAF0036C97C /* AppDelegate.swift in Sources */,
+				6AFD21321E5BAF520087D7F2 /* ZombieSprite.swift in Sources */,
+				6AA4CD081E68D21A0087DD10 /* GameOverScene.swift in Sources */,
+				6AFD21291E5A0F2A0087D7F2 /* ThrowingState.swift in Sources */,
+				6AFD21351E5C92FB0087D7F2 /* IdleZombieState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		930797A61E533CB00036C97C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				930797A71E533CB00036C97C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		930797AA1E533CB00036C97C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		930797AB1E533CB00036C97C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		930797AD1E533CB00036C97C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MyNinja/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Home.MyNinja;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		930797AE1E533CB00036C97C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MyNinja/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Home.MyNinja;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		930797921E533CAF0036C97C /* Build configuration list for PBXProject "MyNinja" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				930797AA1E533CB00036C97C /* Debug */,
+				930797AB1E533CB00036C97C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		930797AC1E533CB00036C97C /* Build configuration list for PBXNativeTarget "MyNinja" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				930797AD1E533CB00036C97C /* Debug */,
+				930797AE1E533CB00036C97C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9307978F1E533CAF0036C97C /* Project object */;
+}
